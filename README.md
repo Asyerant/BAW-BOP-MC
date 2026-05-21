@@ -2,20 +2,20 @@
 
 Welcome to BAW-BOP-MC! This is a mod pack for our Minecraft Forge 1.20.1. Most of the mods in this pack are based off of [The Bunker Boys Modpack](https://www.curseforge.com/minecraft/modpacks/the-bunker-boys), although we've changed some things around to tailor it to our server experience.
 
-Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use [our CurseForge pack](https://www.curseforge.com/minecraft/share/k1eqG660). Specific instructions will be included in Discord.
+Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use our Modrinth pack through Discord. Specific instructions will be included in Discord.
 
 
 ## "Which release do I choose?"
 
 There are two versions of the modpack, either of which can be used to join the server. The only difference is the client-side visual quality:
 
-**Client-Fast**: Contains the standard modpack (67 mods). Recommended for most players.
+**Client-Fast**: Contains the standard modpack (68 mods). Recommended for most players.
 - **CPU:** Intel i5 (10th gen+) / AMD Ryzen 5 3600 or better
 - **GPU:** GTX 1050 Ti / RX 570 or better
 - **RAM:** 8GB system RAM. (Close out every other application before launching)
 - **Storage:** SSD strongly recommended
 
-**Client-Fancy**: Contains the full visual experience (70 mods + 4 shaderpacks). Exactly the same as Client-Fast, but with shader support, connected textures, and extended render distance (via Oculus, Fusion, and Farsight, respectively). Only use this if your PC is beefy enough to handle it comfortably.
+**Client-Fancy**: Contains the full visual experience (70 mods + 4 shaderpacks). Exactly the same as Client-Fast, but with shader support and extended render distance (via Oculus and Farsight, respectively). Only use this if your PC is beefy enough to handle it comfortably.
 - **CPU:** Intel i5 (12th gen+) / AMD Ryzen 5 5600X or better
 - **GPU:** RTX 3060 / RX 6600 XT or better
 - **RAM:** 16GB system RAM (32GB would be ideal)
@@ -25,7 +25,46 @@ If you're not sure which one to choose, **I recommend starting with Client-Fast*
 Additionally, check out the Performance Tips section below if you want to squeeze out any more performance from your system.
 
 
-## Installation
+## Installation - Modrinth
+
+### Step 0: Download the Modrinth app
+
+For a much easier installation process, you can use the Modrinth app. The installation location is also seperated under `%appdata%/roaming/modrinthapp/profiles` rather than the traditional `%appdata%/roaming/.minecraft`
+
+1. Download the [Modrinth app](https://modrinth.com/app)
+2. When first running Modrinth, sign in using your Minecraft/Microsoft account.
+
+### Step 1: Download the .mrpack file from Google Drive
+
+In the discord server there is a link to a google drive folder.
+
+Download one of the two `.mrpack` files based on the information above.
+
+### Step 2: Import the modpack to Modrinth
+
+1. Find the + on the left sign of the Modrinth app.
+2. Select the **Install Modpack** option and then **Import Modpack**.
+3. Select the `.mrpack` file that you downloaded.
+
+A warning will appear since the file is not officially uploaded to Modrinth. Ensure you only recieved the file from an **official** link. You can safely select **Install Anyways**.
+
+### Step 3: Adjust the modpack's RAM allocation
+
+Modpacks require much more RAM than typical minecraft, so the default value will cause several lag spikes.
+
+1. Under Library, right-click the modpack instance and select **View instance**
+2. In the top-right, click on gear icon and and navigate to **Java and memory**
+3. Under Memory allocated, select custom allocation and input one of the values below:
+   - 4096 MB (MINIMUM)
+   - 6144 MB (RECOMMENDED)
+   - 8192 MB (16GB+ RAM)
+
+### Step 4: Launch the Modpack
+
+Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
+
+
+## Installation - Manual
 
 ### Step 0: Run Minecraft 1.20.1 at least once
 
@@ -58,7 +97,7 @@ Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases
 
 ### Step 3: Clean your mods folder
 
-Before installing, make sure your `.minecraft` folder doesn't have leftover mods from a previous modded playthrough. If there are existing files in your `mods/`, `shaderpacks/`, or `config/` folders, copy them somewhere safe on your computer (e.g. in a folder on your Desktop), then delete everything in your `mods/` folder.
+Before installing, make sure your `.minecraft` folder doesn't have leftover mods from a previous modded playthrough. If there are existing files in your `mods/`, `shaderpacks/`, `config/` folders or `options.txt`, copy them somewhere safe on your computer (e.g. in a folder on your Desktop), then delete everything in your `mods/` folder.
 
  An empty mods folder is important, as any stray mods from other packs will cause crashes/incompatibility with joining the server.
 
@@ -73,11 +112,11 @@ If you don't see a `mods/` folder, that's fine, as we will be creating it in the
 
 ### Step 4: Extract the modpack
 
-1. Open the zip file you downloaded. Inside, you'll see a `mods/` folder (If you downloaded Fancy, you'll see a `shaderpacks/` folder too).
+1. Open the zip file you downloaded. Inside, you'll see a `mods/` folder, a `config/` folder, and `options.txt` (If you downloaded Fancy, you'll see a `shaderpacks/` folder too).
 
 2. Extract the contents of the zip directly into your `.minecraft` folder. 
     * This can be done by drag-and-dropping or copying the files from the zip folder **directly** into `.minecraft`. 
-    * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain a bunch of `.jar` files.
+    * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain several `.jar` files and your config folder should have `.json` or `.toml` file types.
 
 <img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="300">
 
