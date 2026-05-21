@@ -60,7 +60,7 @@ Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases
 
 Before installing, make sure your `.minecraft` folder doesn't have leftover mods from a previous modded playthrough. If there are existing files in your `mods/`, `shaderpacks/`, or `config/` folders, copy them somewhere safe on your computer (e.g. in a folder on your Desktop), then delete everything in your `mods/` folder.
 
- An empty mods folder is important, as any stray mods from other packs will cause crashes/incompatibilty with joining the server.
+ An empty mods folder is important, as any stray mods from other packs will cause crashes/incompatibility with joining the server.
 
 To find your `.minecraft` folder:
 1. Press **Windows + R** on your keyboard
@@ -128,13 +128,13 @@ This repo is organized into layers that combine to create the different releases
  - `client/` has all mods necessary for every client release
  - `visuals/` holds graphics mods and shaders for the Client-Fancy release
  - `server/` includes only server-side mods
- - `releases/` contains powershell scripts that used on a local repo to quickly package the Github releases.
+ - `releases/` contains powershell scripts that are used on a local repo to quickly package the Github releases.
 
 **Structure of each release:**
  - `Client-Fancy`
-    * `base/` + `client/`
- - `Client- Fast`
     * `base/` + `client/` + `visuals/`
+ - `Client-Fast`
+    * `base/` + `client/`
 
 Mods in the `server/` folder are not packaged into any releases.
 
