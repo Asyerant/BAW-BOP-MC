@@ -79,9 +79,9 @@ If you don't see a `mods/` folder, that's fine, as we will be creating it in the
     * This can be done by drag-and-dropping or copying the files from the zip folder **directly** into `.minecraft`. 
     * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain a bunch of `.jar` files.
 
-<img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="275">
+<img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="300">
 
-<img src="repo-assets/mods-folder.png" alt="Screenshot of the mods folder, showing all the .jar files inside after unzipping" width="275">
+<img src="repo-assets/mods-folder.png" alt="Screenshot of the mods folder, showing all the .jar files inside after unzipping" width="300">
 
 ### Step 5: Launch and play! :D
 
@@ -117,7 +117,7 @@ If you run into any issues, reach out to either Sparklebird59 or Maltent on the 
 
 
 <br><br><br>
-# ~SERVER ADMIN STUFF~
+# SERVER ADMIN STUFF
 
 
 ## Repo Structure
