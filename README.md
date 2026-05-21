@@ -2,14 +2,14 @@
 
 Welcome to BAW-BOP-MC! This is a mod pack for our Minecraft Forge 1.20.1. Most of the mods in this pack are based off of [The Bunker Boys Modpack](https://www.curseforge.com/minecraft/modpacks/the-bunker-boys), although we've changed some things around to tailor it to our server experience.
 
-Below, you will find the installation instructions for setting up the modpack manually. Alternatively, you can use [our CurseForge pack [INSERT PUBLIC LINK HERE LATER]](https://www.youtube.com/watch?v=dQw4w9WgXcQ) if you would like a more straightforwawrd installation. Specific instructions will be included in Discord.
+Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use [our CurseForge pack](https://www.curseforge.com/minecraft/share/k1eqG660). Specific instructions will be included in Discord.
 
 
 ## "Which release do I choose?"
 
-There are two versions of the modpack. Both connect to the same server--the only difference is the visual quality on your end.
+There are two versions of the modpack, either of which can be used to join the server. The only difference is the client-side visual quality:
 
-**Client-Fast**: Contains the standard modpack (67 mods). Everything you need to join and play. Recommended for most players.
+**Client-Fast**: Contains the standard modpack (67 mods). Recommended for most players.
 - **CPU:** Intel i5 (10th gen+) / AMD Ryzen 5 3600 or better
 - **GPU:** GTX 1050 Ti / RX 570 or better
 - **RAM:** 8GB system RAM. (Close out every other application before launching)
@@ -21,7 +21,8 @@ There are two versions of the modpack. Both connect to the same server--the only
 - **RAM:** 16GB system RAM (32GB would be ideal)
 - **Storage:** SSD required
 
-If you're not sure which one to choose, **I recommend starting with Client-Fast**. You can always switch over to the Client-Fancy later on anyway. Additionally, check out the Performance Tips section below if you want to squeeze out any more performance from your system.
+If you're not sure which one to choose, **I recommend starting with Client-Fast**. You can always switch over to the Client-Fancy later on anyway. 
+Additionally, check out the Performance Tips section below if you want to squeeze out any more performance from your system.
 
 
 ## Installation
@@ -30,25 +31,24 @@ If you're not sure which one to choose, **I recommend starting with Client-Fast*
 
 Before starting, we need to generate the game files that Minecraft Forge needs.
 
-1. Open the Minecraft Launcher, select version **1.20.1** from the Installations tab, and launch the game. 
-2. Wait until you reach the main menu, then close the game. 
+1. Open the Minecraft Launcher and go to **Installations** > **New Installation**
+2. Select version **1.20.1** from the Installations tab and click **Install** at the bottom right. 
+3. Launch the game. Wait until you reach the main menu, then close the game. 
  
-[MAYBE PUT SCREEN SHOT HERE TO SHOW HOW TO SELECT VERSION?]
+<img src="repo-assets/select-version.png" alt="Screenshot of the installation menu with 1.20.1 selected" width="300">
 
-### Step 1: Install Forge
+### Step 1: Install Forge 47.4.10
 
 **[Download Forge 1.20.1 - 47.4.10 Installer](https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.4.10/forge-1.20.1-47.4.10-installer.jar)**
 
 Once downloaded:
 1. Double-click the `.jar` file to run it. If it doesn't open, right-click > **Open With** > **Java(TM) Platform SE Binary**.
-2. Select **"Install client"** and click **OK**.
+2. Make sure the path matches the same format as the image below. Select **"Install client"** and click **OK**.
 
-[PUT SCREENSHOT HERE WITH THE "INSTALL CLIENT" SELECTED]
+<img src="repo-assets/forge-installer.png" alt="Screenshot of the forge installer with the file path and install client option selected" width="300">
 
 3. Open the Minecraft Launcher and launch the profile labeled **1.20.1-forge-47.4.10**
-4. Once it's confirmed to be working, close the game.
-
-[MAYBE PUT SCREENSHOT HERE SHOWING THE MC TITLE SCREEN WITH THE FORGE STUFF?]
+4. Once it reaches the menu, confirm that the correct version is installed at the bottom left, then close the game.
 
 ### Step 2: Download the modpack
 
@@ -65,9 +65,9 @@ Before installing, make sure your `.minecraft` folder doesn't have leftover mods
 To find your `.minecraft` folder:
 1. Press **Windows + R** on your keyboard
 2. Type `%appdata%` and click **OK**
-3. Open the `.minecraft` folder
+3. Open the `.minecraft` folder (first folder in the list)
 
-[INCLUDE SCREENSHOT OF THE WINDOWS + R MENU W/ THE %APPDATA%]
+<img src="repo-assets/windows-run.png" alt="Screenshot of the Windows Run menu with %appdata% in the text box" width="300">
 
 If you don't see a `mods/` folder, that's fine, as we will be creating it in the next step.
 
@@ -79,7 +79,9 @@ If you don't see a `mods/` folder, that's fine, as we will be creating it in the
     * This can be done by drag-and-dropping or copying the files from the zip folder **directly** into `.minecraft`. 
     * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain a bunch of `.jar` files.
 
-[INCLUDE TWO SCREENSHOTS OF THE .MINECRAFT FOLDER + THE MODS FOLDER WITH ALL THE JARS]
+<img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="275">
+
+<img src="repo-assets/mods-folder.png" alt="Screenshot of the mods folder, showing all the .jar files inside after unzipping" width="275">
 
 ### Step 5: Launch and play! :D
 
@@ -106,7 +108,7 @@ Additionally, you can also consider adding the following flags to the JVM Argume
 
 ``-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M``
 
-[INSERT SCREENSHOT OF THE JVM FIELDS IN THE MINECRAFT LAUNCHER]
+<img src="repo-assets/jvm-flags.png" alt="Screenshot of the edit installation menu in the minecraft launcher, showing jvm arguments at the bottom" width="275">
 
 ## Need More Help?
 
@@ -152,6 +154,8 @@ This creates zip files in the `releases/` folder with a `VX.X` placeholder versi
 
 
 <!---
+OLD README CODE FOR IMAGES:
+![Screenshot of the installation menu with 1.20.1 selected](repo-assets/forge-installer.png)
 
 
 ================ HERE LIES THE OLD README FILE, JUST IN CASE IT'S NECESSARY STILL
