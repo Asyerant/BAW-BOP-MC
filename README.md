@@ -2,7 +2,7 @@
 
 Welcome to BAW-BOP-MC! This is a mod pack for our Minecraft Forge 1.20.1. Most of the mods in this pack are based off of [The Bunker Boys Modpack](https://www.curseforge.com/minecraft/modpacks/the-bunker-boys), although we've changed some things around to tailor it to our server experience.
 
-Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use our Modrinth pack through Discord. Specific instructions will be included in Discord.
+Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use the Modrinth files, `.mrpack`. Specific instructions will be included in Discord.
 
 
 ## "Which release do I choose?"
@@ -34,11 +34,9 @@ For a much easier installation process, you can use the Modrinth app. The instal
 1. Download the [Modrinth app](https://modrinth.com/app)
 2. When first running Modrinth, sign in using your Minecraft/Microsoft account.
 
-### Step 1: Download the .mrpack file from Google Drive
+### Step 1: Download the .mrpack file
 
-In the discord server, there is a link to a google drive folder.
-
-Download one of the two `.mrpack` files based on the information above.
+Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.mrpack` files determined in the section 'Which release do I choose?':
 
 ### Step 2: Import the modpack to Modrinth
 
