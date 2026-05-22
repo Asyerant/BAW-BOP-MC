@@ -36,7 +36,7 @@ For a much easier installation process, you can use the Modrinth app. The instal
 
 ### Step 1: Download the .mrpack file from Google Drive
 
-In the discord server there is a link to a google drive folder.
+In the discord server, there is a link to a google drive folder.
 
 Download one of the two `.mrpack` files based on the information above.
 
@@ -62,7 +62,6 @@ Modpacks require much more RAM than typical minecraft, so the default value will
 ### Step 4: Launch the Modpack
 
 Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
-
 
 ## Installation - Manual
 
