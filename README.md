@@ -30,6 +30,8 @@ Below, you will find the installation instructions for setting up the modpack ma
   - [Step 3: Configure the mods to fit your computer](#step-3-configure-the-mods-to-fit-your-computer)
   - [Step 4: Launch and play!](#step-4-launch-and-play-1)
 
+- [Final Step: Adding keybinds](#final-step-adding-keybinds)
+
 - [Need More Help?](#need-more-help)
 
 - [Server Admin Information](#server-admin-information)
@@ -234,6 +236,15 @@ Starting from the **My Modpacks** menu:
 Click on the orange **Play** button. CurseForge should start installing everything you need.
 
 If you need help with any part of the process, ping @minecraft-server-admin in #minecraft-general with your issue and we'll gladly help!
+
+## Final Step: Adding keybinds
+
+As a final step to any installation that you choose, you need to alter the keybinds for many mods to be usable.
+
+1. Download `options.txt` in the respective release page.
+2. Place this file directly in the `.minecraft` or respective folder, right outside of the mods and shaderpack folder.
+
+Only download this once as it resets your graphics settings to defaults.
 
 <br>
 
