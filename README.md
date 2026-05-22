@@ -2,10 +2,43 @@
 
 Welcome to BAW-BOP-MC! This is a mod pack for our Minecraft Forge 1.20.1. Most of the mods in this pack are based off of [The Bunker Boys Modpack](https://www.curseforge.com/minecraft/modpacks/the-bunker-boys), although we've changed some things around to tailor it to our server experience.
 
-Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use the Modrinth files, `.mrpack`. Specific instructions will be included in Discord.
+Below, you will find the installation instructions for setting up the modpack manually. Alternatively, if you would like a more straightforward installation, you can use the Modrinth files, `.mrpack` or Curseforge files, `.zip`. Specific instructions will be included in Discord.
 
+# Table of Contents
 
-## "Which release do I choose?"
+- [Which release do I choose?](#which-release-do-i-choose)
+
+- [Manual Installation](#installing-manually)
+  - [Step 0: Run Minecraft 1.20.1 at least once](#step-0-run-minecraft-1201-at-least-once)
+  - [Step 1: Install Forge 47.4.10](#step-1-install-forge-47410)
+  - [Step 2: Download the modpack](#step-2-download-the-modpack)
+  - [Step 4: Extract the modpack](#step-4-extract-the-modpack)
+  - [Step 5: Configure RAM Allocation](#step-5-configure-ram-allocation)
+  - [Step 6: Launch and play!](#step-6-launch-and-play)
+
+- [Installing using Modrinth](#step-0-download-the-modrinth-app)
+  - [Step 0: Download the Modrinth app](#step-0-download-the-modrinth-app)
+  - [Step 1: Download the .mrpack file](#step-1-download-the-mrpack-file)
+  - [Step 2: Import the modpack to Modrinth](#step-2-import-the-modpack-to-modrinth)
+  - [Step 3: Configure RAM allocation](#step-3-configure-ram-allocation)
+  - [Step 4: Launch and play!](#step-4-launch-and-play)
+
+- [Installing using Curseforge](#installing-with-curseforge)
+  - [Step 0: Download and install the CurseForge app](#step-0-download-and-install-the-curseforge-app)
+  - [Step 1: Download from Github](#step-1-download-from-github)
+  - [Step 2: Import the modpack](#step-2-import-the-baw-bop-mc-modpack)
+  - [Step 3: Configure the mods to fit your computer](#step-3-configure-the-mods-to-fit-your-computer)
+  - [Step 4: Launch and play!](#step-4-launch-and-play-1)
+
+- [Need More Help?](#need-more-help)
+
+- [Server Admin Information](#server-admin-information)
+  - [Repo Structure](#repo-structure)
+  - [Building Releases (For Admins)](#building-releases-for-admins)
+
+<br>
+
+# "Which release do I choose?"
 
 There are two versions of the modpack, either of which can be used to join the server. The only difference is the client-side visual quality:
 
@@ -24,44 +57,7 @@ There are two versions of the modpack, either of which can be used to join the s
 If you're not sure which one to choose, **I recommend starting with Client-Fast**. You can always switch over to the Client-Fancy later on anyway. 
 Additionally, check out the Performance Tips section below if you want to squeeze out any more performance from your system.
 
-
-## Installation - Modrinth
-
-### Step 0: Download the Modrinth app
-
-For a much easier installation process, you can use the Modrinth app. The installation location is also seperated under `%appdata%/roaming/modrinthapp/profiles` rather than the traditional `%appdata%/roaming/.minecraft`
-
-1. Download the [Modrinth app](https://modrinth.com/app)
-2. When first running Modrinth, sign in using your Minecraft/Microsoft account.
-
-### Step 1: Download the .mrpack file
-
-Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.mrpack` files determined in the section 'Which release do I choose?':
-
-### Step 2: Import the modpack to Modrinth
-
-1. Find the + on the left sign of the Modrinth app.
-2. Select the **Install Modpack** option and then **Import Modpack**.
-3. Select the `.mrpack` file that you downloaded.
-
-A warning will appear since the file is not officially uploaded to Modrinth. Ensure you only recieved the file from an **official** link. You can safely select **Install Anyways**.
-
-### Step 3: Adjust the modpack's RAM allocation
-
-Modpacks require much more RAM than typical minecraft, so the default value will cause several lag spikes.
-
-1. Under Library, right-click the modpack instance and select **View instance**
-2. In the top-right, click on gear icon and and navigate to **Java and memory**
-3. Under Memory allocated, select custom allocation and input one of the values below:
-   - 4096 MB (MINIMUM)
-   - 6144 MB (RECOMMENDED)
-   - 8192 MB (16GB+ RAM)
-
-### Step 4: Launch the Modpack
-
-Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
-
-## Installation - Manual
+## Installing Manually
 
 ### Step 0: Run Minecraft 1.20.1 at least once
 
@@ -89,8 +85,8 @@ Once downloaded:
 ### Step 2: Download the modpack
 
 Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download the release determined in the section 'Which release do I choose?':
-- `BAW-BOP-client-fast-V1.0.zip`
-- `BAW-BOP-client-fancy-V1.0.zip`
+- `BAW-BOP-client-fast-VX.X.zip`
+- `BAW-BOP-client-fancy-VX.X.zip`
 
 ### Step 3: Clean your mods folder
 
@@ -115,29 +111,22 @@ If you don't see a `mods/` folder, that's fine, as we will be creating it in the
     * This can be done by drag-and-dropping or copying the files from the zip folder **directly** into `.minecraft`. 
     * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain several `.jar` files and your config folder should have `.json` or `.toml` file types.
 
-<img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="300">
+<p float="left">
+  <img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="49%" />
+  <img src="repo-assets/mods-folder.png" alt="Screenshot of the mods folder, showing all the .jar files inside after unzipping" width="49%" />
+</p>
 
-<img src="repo-assets/mods-folder.png" alt="Screenshot of the mods folder, showing all the .jar files inside after unzipping" width="300">
+### Step 5: Configure RAM Allocation
 
-### Step 5: Launch and play! :D
+Modpacks require much more RAM than typical minecraft, so the default value will cause several lag spikes.
 
-Open the Minecraft Launcher, select the **Forge 1.20.1** profile, and click **Play**.
-
-The first launch will take longer than usual (about 1 - 2 minutes) as Forge loads all the mods. Once you reach the main menu, click **Multiplayer**, add the server via the link in Discord, and join!
-
-
-## Performance Tips
-
-If you're experiencing low FPS or long load times, try these:
-
-**Allocate more RAM to Minecraft:**
 1. Open the Minecraft Launcher
 2. Go to **Installations** > click your Forge profile > the three dots > **Edit**
 3. Expand **More Options** at the bottom right
 4. In the **JVM Arguments** box, find `-Xmx2G` (or similar) and change it to:
    - 4GB (MINIMUM): `-Xmx4G`
    - 6GB (RECOMMENDED): `-Xmx6G`
-   - 8GB (if you have 16GB+ RAM): `-Xmx8G`
+   - 8GB (16GB+ RAM): `-Xmx8G`
 5. Make sure to click **Save** before closing.
 
 Additionally, you can also consider adding the following flags to the JVM Arguments. These may help with memory garbage collection:
@@ -146,14 +135,117 @@ Additionally, you can also consider adding the following flags to the JVM Argume
 
 <img src="repo-assets/jvm-flags.png" alt="Screenshot of the edit installation menu in the minecraft launcher, showing jvm arguments at the bottom" width="275">
 
-## Need More Help?
+### Step 6: Launch and play!
+
+Open the Minecraft Launcher, select the **Forge 1.20.1** profile, and click **Play**.
+
+The first launch will take longer than usual (about 1 - 2 minutes) as Forge loads all the mods. Once you reach the main menu, click **Multiplayer**, add the server via the link in Discord, and join!
+
+## Installing with Modrinth
+
+### Step 0: Download the Modrinth app
+
+For a much easier installation process, you can use the Modrinth app. The installation location is also seperated under `%appdata%/roaming/modrinthapp/profiles` rather than the traditional `%appdata%/roaming/.minecraft`
+
+1. Download the [Modrinth app](https://modrinth.com/app)
+2. When first running Modrinth, sign in using your Minecraft/Microsoft account.
+
+<img src="repo-assets/modrinth-signin.png" alt="Screenshot of Modrinth Sign-in" width="300">
+
+### Step 1: Download the .mrpack file
+
+Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.mrpack` files determined in the section 'Which release do I choose?':
+- `BAW-BOP-modrinth-fast-VX.X.mrpack`
+- `BAW-BOP-modrinth-fancy-VX.X.mrpack`
+
+### Step 2: Import the modpack to Modrinth
+
+1. Find the + on the left sign of the Modrinth app.
+2. Select the **Install Modpack** option and then **Import Modpack**.
+3. Select the `.mrpack` file that you downloaded.
+
+A warning will appear since the file is not officially uploaded to Modrinth. Ensure you only recieved the file from the **official** github release. If so, you can safely select **Install Anyways**.
+
+<img src="repo-assets/modrinth-warning.png" alt="Screenshot of Modrinth modpack import warning" width="350">
+
+### Step 3: Configure RAM allocation
+
+Modpacks require much more RAM than typical minecraft, so the default value will cause several lag spikes.
+
+1. Open your Modrinth Library on the left side, right-click the modpack instance, and select **View instance**
+2. In the top-right, click on gear icon and and navigate to **Java and memory**
+3. Under Memory allocated, select custom allocation and input one of the values below:
+   - 4096 MB (MINIMUM)
+   - 6144 MB (RECOMMENDED)
+   - 8192 MB (16GB+ RAM)
+
+Additionally, you can also consider adding the following under custom Java Arguments. These may help with memory garbage collection:
+
+``-XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=16M``
+
+<img src="repo-assets/modrinth-ram.png" alt="Screenshot of custom RAM allocation screen" width="500">
+
+### Step 4: Launch and play!
+
+Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
+
+## Installing with Curseforge
+
+### Step 0: Download and install the CurseForge app
+
+1. Visit [Curseforge](https://www.curseforge.com/download/app) and download the CurseForge app for your operating system.
+2. Find the installer in your Downloads folder and run it.
+3. Click **Next**, then accept the Privacy Policy by clicking the **check box** on the left, then click **Next** again. It should start promptly installing
+4. If it asks you to install any other software (e.g. Outplayed), make sure to click **No Thanks**--they aren't necessary to have.
+
+### Step 1: Download from Github
+
+Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.zip` files determined in the section 'Which release do I choose?':
+- `BAW-BOP-curseforge-fast-VX.X.zip`
+- `BAW-BOP-curseforge-fancy-VX.X.zip`
+
+### Step 2: Import the modpack
+
+In the CurseForge app:
+1. Starting at the **Home** screen (top left house icon), click on **Minecraft**.
+2. Select the **Import** button.
+3. Select **Choose .zip file** and import the `.zip` you just downloaded.
+4. Curseforge will then download Forge 1.20.1-47.4.10 and all the mods automatically. Give it a few minutes to finish downloading everything.
+
+<img src="repo-assets/curseforge-import.png" alt="Screenshot of where the import button is in Curseforge" width="500">
+
+### Step 3: Configure RAM allocation
+This step is really important for making sure that the pack runs smoothly. The settings will depend on how much RAM your PC has. 
+
+Starting from the **My Modpacks** menu:
+
+1. Select the **BAW-BOP-MC** pack
+2. Click on the **three vertical dots** next to "Play" > Select **Profile Options**
+3. Scroll down to the **Advanced Settings** section and into the **Additional Arguments** box.
+4. Depending on your system, find `-Xmx2G` and change it to:
+   - 4GB (MINIMUM): `-Xmx4G`
+   - 6GB (RECOMMENDED): `-Xmx6G`
+   - 8GB (16GB+ RAM): `-Xmx8G`
+5. Make sure to click **Done** after making changes.
+
+<img src="repo-assets/curseforge-ramallocation.png" alt="Screenshot of the mods to disable if applicable" width="400">
+
+### Step 4: Launch and play!
+Click on the orange **Play** button. CurseForge should start installing everything you need.
+
+If you need help with any part of the process, ping @minecraft-server-admin in #minecraft-general with your issue and we'll gladly help!
+
+<br>
+
+# Need More Help?
 
 If you run into any issues, reach out to either Sparklebird59 or Maltent on the BAW-BOP Discord server! We're happy to help you get set up :D
 
 
 
-<br><br><br>
-# SERVER ADMIN STUFF
+<br><br>
+
+# Server Admin Information
 
 
 ## Repo Structure
@@ -187,6 +279,8 @@ build-client-fancy.ps1
 ```
 
 This creates zip files in the `releases/` folder with a `VX.X` placeholder version. Make sure to rename them to the actual version number before uploading to GitHub.
+
+Currently only functional for manual installation zip files.
 
 
 <!---
