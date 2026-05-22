@@ -14,21 +14,18 @@ Below, you will find the installation instructions for setting up the modpack ma
   - [Step 2: Download the modpack](#step-2-download-the-modpack)
   - [Step 4: Extract the modpack](#step-4-extract-the-modpack)
   - [Step 5: Configure RAM Allocation](#step-5-configure-ram-allocation)
-  - [Step 6: Launch and play!](#step-6-launch-and-play)
-
-- [Installing using Modrinth](#step-0-download-the-modrinth-app)
-  - [Step 0: Download the Modrinth app](#step-0-download-the-modrinth-app)
-  - [Step 1: Download the .mrpack file](#step-1-download-the-mrpack-file)
-  - [Step 2: Import the modpack to Modrinth](#step-2-import-the-modpack-to-modrinth)
-  - [Step 3: Configure RAM allocation](#step-3-configure-ram-allocation)
-  - [Step 4: Launch and play!](#step-4-launch-and-play)
 
 - [Installing using Curseforge](#installing-with-curseforge)
   - [Step 0: Download and install the CurseForge app](#step-0-download-and-install-the-curseforge-app)
   - [Step 1: Download from Github](#step-1-download-from-github)
   - [Step 2: Import the modpack](#step-2-import-the-modpack)
   - [Step 3: Configure RAM allocation](#step-3-configure-ram-allocation)
-  - [Step 4: Launch and play!](#step-4-launch-and-play-1)
+
+- [Installing using Modrinth](#step-0-download-the-modrinth-app)
+  - [Step 0: Download the Modrinth app](#step-0-download-the-modrinth-app)
+  - [Step 1: Download the .mrpack file](#step-1-download-the-mrpack-file)
+  - [Step 2: Import the modpack to Modrinth](#step-2-import-the-modpack-to-modrinth)
+  - [Step 3: Configure RAM allocation](#step-3-configure-ram-allocation)
 
 - [Final Step: Adding keybinds](#final-step-adding-keybinds)
 
@@ -137,12 +134,6 @@ Additionally, you can also consider adding the following flags to the JVM Argume
 
 <img src="repo-assets/jvm-flags.png" alt="Screenshot of the edit installation menu in the minecraft launcher, showing jvm arguments at the bottom" width="275">
 
-### Step 6: Launch and play!
-
-Open the Minecraft Launcher, select the **Forge 1.20.1** profile, and click **Play**.
-
-The first launch will take longer than usual (about 1 - 2 minutes) as Forge loads all the mods. Once you reach the main menu, click **Multiplayer**, add the server via the link in Discord, and join!
-
 ## Installing with Curseforge
 
 ### Step 0: Download and install the CurseForge app
@@ -183,9 +174,6 @@ Starting from the **My Modpacks** menu:
 5. Make sure to click **Done** after making changes.
 
 <img src="repo-assets/curseforge-ramallocation.png" alt="Screenshot of the mods to disable if applicable" width="400">
-
-### Step 4: Launch and play!
-Click on the orange **Play** button. CurseForge should start installing everything you need.
 
 ## Installing with Modrinth
 
@@ -231,10 +219,6 @@ Additionally, you can also consider adding the following under custom Java Argum
 
 <img src="repo-assets/modrinth-ram.png" alt="Screenshot of custom RAM allocation screen" width="500">
 
-### Step 4: Launch and play!
-
-Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
-
 ## Final Step: Adding keybinds
 
 As a final step to any installation that you choose, you need to alter the keybinds for many mods to be usable.
@@ -243,6 +227,8 @@ As a final step to any installation that you choose, you need to alter the keybi
 2. Place this file directly in the `.minecraft` or respective folder, right outside of the mods and shaderpack folder.
 
 Only download this once as it resets your graphics settings to defaults.
+
+You can now launch and play through whichever installation method you chose!
 
 <br>
 
