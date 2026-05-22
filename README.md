@@ -26,8 +26,8 @@ Below, you will find the installation instructions for setting up the modpack ma
 - [Installing using Curseforge](#installing-with-curseforge)
   - [Step 0: Download and install the CurseForge app](#step-0-download-and-install-the-curseforge-app)
   - [Step 1: Download from Github](#step-1-download-from-github)
-  - [Step 2: Import the modpack](#step-2-import-the-baw-bop-mc-modpack)
-  - [Step 3: Configure the mods to fit your computer](#step-3-configure-the-mods-to-fit-your-computer)
+  - [Step 2: Import the modpack](#step-2-import-the-modpack)
+  - [Step 3: Configure RAM allocation](#step-3-configure-ram-allocation)
   - [Step 4: Launch and play!](#step-4-launch-and-play-1)
 
 - [Final Step: Adding keybinds](#final-step-adding-keybinds)
@@ -87,12 +87,12 @@ Once downloaded:
 ### Step 2: Download the modpack
 
 Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download the release determined in the section 'Which release do I choose?':
-- `BAW-BOP-client-fast-VX.X.zip`
-- `BAW-BOP-client-fancy-VX.X.zip`
+- `BAW-BOP-client-fast-vX.X.zip`
+- `BAW-BOP-client-fancy-vX.X.zip`
 
 ### Step 3: Clean your mods folder
 
-Before installing, make sure your `.minecraft` folder doesn't have leftover mods from a previous modded playthrough. If there are existing files in your `mods/`, `shaderpacks/`, `config/` folders or `options.txt`, copy them somewhere safe on your computer (e.g. in a folder on your Desktop), then delete everything in your `mods/` folder.
+Before installing, make sure your `.minecraft` folder doesn't have leftover mods from a previous modded playthrough. If there are existing files in your `mods/` or `shaderpacks/` folders or `options.txt`, copy them somewhere safe on your computer (e.g. in a folder on your Desktop), then delete everything in your `mods/` folder.
 
  An empty mods folder is important, as any stray mods from other packs will cause crashes/incompatibility with joining the server.
 
@@ -107,11 +107,11 @@ If you don't see a `mods/` folder, that's fine, as we will be creating it in the
 
 ### Step 4: Extract the modpack
 
-1. Open the zip file you downloaded. Inside, you'll see a `mods/` folder, a `config/` folder, and `options.txt` (If you downloaded Fancy, you'll see a `shaderpacks/` folder too).
+1. Open the zip file you downloaded. Inside, you'll see a `mods/` folder. (If you downloaded Fancy, you'll see a `shaderpacks/` folder too)
 
 2. Extract the contents of the zip directly into your `.minecraft` folder. 
     * This can be done by drag-and-dropping or copying the files from the zip folder **directly** into `.minecraft`. 
-    * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain several `.jar` files and your config folder should have `.json` or `.toml` file types.
+    * The contents of the zip should merge with your existing files, and your `mods/` folder should now contain several `.jar` files.
 
 <p float="left">
   <img src="repo-assets/minecraft-folder.png" alt="Screenshot of the .minecraft folder with config, mods, and shaderpacks selected" width="49%" />
@@ -143,6 +143,50 @@ Open the Minecraft Launcher, select the **Forge 1.20.1** profile, and click **Pl
 
 The first launch will take longer than usual (about 1 - 2 minutes) as Forge loads all the mods. Once you reach the main menu, click **Multiplayer**, add the server via the link in Discord, and join!
 
+## Installing with Curseforge
+
+### Step 0: Download and install the CurseForge app
+
+1. Visit [Curseforge](https://www.curseforge.com/download/app) and download the CurseForge app for your operating system.
+2. Find the installer in your Downloads folder and run it.
+3. Click **Next**, then accept the Privacy Policy by clicking the **check box** on the left, then click **Next** again. It should start promptly installing
+4. If it asks you to install any other software (e.g. Outplayed), make sure to click **No Thanks**--they aren't necessary to have.
+
+### Step 1: Download from Github
+
+Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.zip` files determined in the section 'Which release do I choose?':
+- `BAW-BOP-curseforge-fast-vX.X.zip`
+- `BAW-BOP-curseforge-fancy-vX.X.zip`
+
+### Step 2: Import the modpack
+
+In the CurseForge app:
+1. Starting at the **Home** screen (top left house icon), click on **Minecraft**.
+2. Select the **Import** button.
+3. Select **Choose .zip file** and import the `.zip` you just downloaded.
+4. Curseforge will then download Forge 1.20.1-47.4.10 and all the mods automatically. Give it a few minutes to finish downloading everything.
+
+<img src="repo-assets/curseforge-import.png" alt="Screenshot of where the import button is in Curseforge" width="500">
+
+### Step 3: Configure RAM allocation
+This step is really important for making sure that the pack runs smoothly. The settings will depend on how much RAM your PC has. 
+
+Starting from the **My Modpacks** menu:
+
+1. Select the **BAW-BOP-MC** pack
+2. Click on the **three vertical dots** next to "Play" > Select **Profile Options**
+3. Scroll down to the **Advanced Settings** section and into the **Additional Arguments** box.
+4. Depending on your system, find `-Xmx2G` and change it to:
+   - 4GB (MINIMUM): `-Xmx4G`
+   - 6GB (RECOMMENDED): `-Xmx6G`
+   - 8GB (16GB+ RAM): `-Xmx8G`
+5. Make sure to click **Done** after making changes.
+
+<img src="repo-assets/curseforge-ramallocation.png" alt="Screenshot of the mods to disable if applicable" width="400">
+
+### Step 4: Launch and play!
+Click on the orange **Play** button. CurseForge should start installing everything you need.
+
 ## Installing with Modrinth
 
 ### Step 0: Download the Modrinth app
@@ -157,8 +201,8 @@ For a much easier installation process, you can use the Modrinth app. The instal
 ### Step 1: Download the .mrpack file
 
 Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.mrpack` files determined in the section 'Which release do I choose?':
-- `BAW-BOP-modrinth-fast-VX.X.mrpack`
-- `BAW-BOP-modrinth-fancy-VX.X.mrpack`
+- `BAW-BOP-modrinth-fast-vX.X.mrpack`
+- `BAW-BOP-modrinth-fancy-vX.X.mrpack`
 
 ### Step 2: Import the modpack to Modrinth
 
@@ -190,52 +234,6 @@ Additionally, you can also consider adding the following under custom Java Argum
 ### Step 4: Launch and play!
 
 Anytime you want to play using the modpack, launch the game through Modrinth. You no longer need to go through the official Minecraft launcher.
-
-## Installing with Curseforge
-
-### Step 0: Download and install the CurseForge app
-
-1. Visit [Curseforge](https://www.curseforge.com/download/app) and download the CurseForge app for your operating system.
-2. Find the installer in your Downloads folder and run it.
-3. Click **Next**, then accept the Privacy Policy by clicking the **check box** on the left, then click **Next** again. It should start promptly installing
-4. If it asks you to install any other software (e.g. Outplayed), make sure to click **No Thanks**--they aren't necessary to have.
-
-### Step 1: Download from Github
-
-Go to the **[BAW-BOP-MC Releases](https://github.com/Maltent/BAW-BOP-MC/releases)** page and download one of the two `.zip` files determined in the section 'Which release do I choose?':
-- `BAW-BOP-curseforge-fast-VX.X.zip`
-- `BAW-BOP-curseforge-fancy-VX.X.zip`
-
-### Step 2: Import the modpack
-
-In the CurseForge app:
-1. Starting at the **Home** screen (top left house icon), click on **Minecraft**.
-2. Select the **Import** button.
-3. Select **Choose .zip file** and import the `.zip` you just downloaded.
-4. Curseforge will then download Forge 1.20.1-47.4.10 and all the mods automatically. Give it a few minutes to finish downloading everything.
-
-<img src="repo-assets/curseforge-import.png" alt="Screenshot of where the import button is in Curseforge" width="500">
-
-### Step 3: Configure RAM allocation
-This step is really important for making sure that the pack runs smoothly. The settings will depend on how much RAM your PC has. 
-
-Starting from the **My Modpacks** menu:
-
-1. Select the **BAW-BOP-MC** pack
-2. Click on the **three vertical dots** next to "Play" > Select **Profile Options**
-3. Scroll down to the **Advanced Settings** section and into the **Additional Arguments** box.
-4. Depending on your system, find `-Xmx2G` and change it to:
-   - 4GB (MINIMUM): `-Xmx4G`
-   - 6GB (RECOMMENDED): `-Xmx6G`
-   - 8GB (16GB+ RAM): `-Xmx8G`
-5. Make sure to click **Done** after making changes.
-
-<img src="repo-assets/curseforge-ramallocation.png" alt="Screenshot of the mods to disable if applicable" width="400">
-
-### Step 4: Launch and play!
-Click on the orange **Play** button. CurseForge should start installing everything you need.
-
-If you need help with any part of the process, ping @minecraft-server-admin in #minecraft-general with your issue and we'll gladly help!
 
 ## Final Step: Adding keybinds
 
